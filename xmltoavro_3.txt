@@ -1,0 +1,81 @@
+{
+  "name": "HABER",
+ "type": "record",
+"mespace":"nifi",
+ "fields": [
+   {
+     "name": "ID",
+     "type": "string"
+   },
+   {
+     "name": "TOPLAMCLIP",
+     "type": "string"
+   },
+   {
+     "name": "YAYINADI",
+     "type": "string"
+   },
+   {
+     "name": "KONU",
+     "type": "string"
+   },
+   {
+     "name": "MARKA",
+     "type": "string"
+   },
+   {
+     "name": "BASLIK",
+     "type": "string"
+   },
+   {
+     "name": "TARIH",
+     "type": "int",
+     "logicalType": "date"
+   },
+   {
+     "name": "SAYFA",
+     "type": "string"
+   },
+   {
+     "name": "YAYINTIPI",
+     "type": "string"
+   },
+   {
+     "name": "EKLENMEZAMANI",
+     "type": "int",
+     "logicalType": "date"
+   },
+   {
+     "name": "HABERICERK",
+     "type": {
+       "type": "array",
+       "items": {
+         "name": "HABERICERK_record",
+         "type": "record",
+         "fields": [
+           {
+             "name": "ICERIKID",
+             "type": "string"
+           },
+           {
+             "name": "LINK",
+             "type": "string"
+           },
+           {
+             "name": "LINKPDF",
+             "type": "string"
+           },
+           {
+             "name": "APLINK",
+             "type": "string"
+           },
+           {
+             "name": "ICERIK",
+             "type": "string"
+           }
+         ]
+       }
+     }
+   }
+ ]
+}
